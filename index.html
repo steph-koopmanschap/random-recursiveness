@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Random Recursiveness</title>
+  <meta name="description" content="Random Recursiveness">
+  <meta name="author" content="Steph Koopmanschap">
+
+  <meta property="og:title" content="Random Recursiveness">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://random-recursiveness.lan/index.html/">
+  <meta property="og:description" content="Random Recursiveness">
+  <meta property="og:image" content="image.png">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./css/style.css"> 
+
+
+</head>
+<body>
+    <center>
+    <h1>Random Recursiveness</h1>
+    <h2>Version 1.0</h2>
+    <p>This program generates 2 random numbers between Minium and Maximum. Then draws a circle the radius of the difference between the 2 numbers. <br>
+    It then generates another 2 randon numbers between the previous 2 numbers and draws another circle the radius of the difference. <br>
+  This continues until the circle will be too small to be drawn or until it runs out of specified iterations. <br>
+The positions of the circle (x,y) are equal to the 2 random numbers </p>
+    <label>Minimum:</label>
+    <input type="value" class="input"></input>
+    <label>Maximum: </label>
+    <input type="value" class="input"></input>
+    <label># of iterations: </label>
+    <input type="value" class="input"></input>
+    <button class="SubmitBtn" onclick="getInput()">Start iterating</button>
+    </center>
+
+    <ul id="out">
+
+    </ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
